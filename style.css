@@ -8,7 +8,15 @@
 }
 
 header {
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 30%;
+  background-color: white;
+  color: rgb(28, 25, 25);
 }
 
 .pads {
