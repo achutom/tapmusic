@@ -31,6 +31,11 @@ button {
   border-radius: 100%;
   padding: 20px;
 }
+
+.pad1:hover {
+  background-color: rgba(55, 174, 174, 0.92);
+}
+
 .pad2 {
   background-color: rgb(55, 174, 99);
   width: 100px;
@@ -39,6 +44,11 @@ button {
   padding: 20px;
   margin-left: 10px;
 }
+
+.pad2:hover {
+  background-color: rgba(55, 174, 99, 0.92);
+}
+
 .pad3 {
   background-color: rgb(172, 201, 65);
   width: 100px;
@@ -47,6 +57,11 @@ button {
   padding: 20px;
   margin-left: 10px;
 }
+
+.pad3:hover {
+  background-color: rgba(171, 201, 65, 0.92);
+}
+
 .pad4 {
   background-color: rgb(174, 65, 55);
   width: 100px;
@@ -55,6 +70,11 @@ button {
   padding: 20px;
   margin-left: 10px;
 }
+
+.pad4:hover {
+  background-color: rgba(174, 65, 55, 0.92);
+}
+
 .pad5 {
   background-color: rgb(127, 78, 206);
   width: 100px;
@@ -63,6 +83,11 @@ button {
   padding: 20px;
   margin-left: 10px;
 }
+
+.pad5:hover {
+  background-color: rgba(127, 78, 206, 0.92);
+}
+
 .pad6 {
   background-color: rgb(189, 54, 128);
   width: 100px;
@@ -70,4 +95,8 @@ button {
   border-radius: 100%;
   padding: 20px;
   margin-left: 10px;
+}
+
+.pad6:hover {
+  background-color: rgba(189, 54, 128, 0.92);
 }
