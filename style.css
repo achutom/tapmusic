@@ -12,11 +12,11 @@ header {
 }
 
 button {
-  width: 100px;
-  height: 50px;
-  border-radius: 30%;
-  background-color: white;
-  color: rgb(28, 25, 25);
+  padding: 10px;
+  border-radius: 10%;
+  border: 5px;
+  background-color: rgb(37, 50, 63);
+  color: rgb(255, 251, 251);
 }
 
 .pads {

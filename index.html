@@ -27,10 +27,24 @@
           data-version="v1"
         >
           <!-- <a
-            class="badge-base__link LI-simple-link"
-            href="https://in.linkedin.com/in/asher-thomas-abraham-0b4a82206?trk=profile-badge"
-          ></a> -->
+        class="badge-base__link LI-simple-link"
+        href="https://in.linkedin.com/in/asher-thomas-abraham-0b4a82206?trk=profile-badge"
+        ></a> -->
         </div>
+        <button id="startMetronome">Start Metronome</button>
+        <button id="stopMetronome" disabled>Stop Metronome</button>
+        <input
+          type="number"
+          id="bpmInput"
+          value="120"
+          min="30"
+          max="300"
+        /><label>BPM</label>
+        <audio
+          src="sounds/metronome-sound.mp3"
+          id="metronomeBeat"
+          preload="auto"
+        />
       </header>
 
       <div class="visual"></div>
