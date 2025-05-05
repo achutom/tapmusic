@@ -6,6 +6,7 @@ const pads = document.querySelectorAll(".pads div");
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 const startMetronome = document.getElementById("startMetronome");
 const stopMetronome = document.getElementById("stopMetronome");
+const bpmInput = document.getElementById("bpmInput");
 
 window.addEventListener("load", () => {
   //ADD sound
@@ -21,6 +22,11 @@ window.addEventListener("load", () => {
 
 window.addEventListener("keydown", (event) => {
   const key = event.key;
+  const activeElement = document.activeElement;
+
+  if (activeElement.tagName === "INPUT" && activeElement.id === "bpmInput") {
+    return;
+  }
 
   if (key >= 1 && key <= 6) {
     const padIndex = parseInt(key) - 1;
@@ -39,7 +45,7 @@ function playClickSound() {
 }
 
 startMetronome.addEventListener("click", () => {
-  const bpm = parseInt(document.getElementById("bpmInput").value, 10);
+  const bpm = parseInt(bpmInput.value, 10);
   const interval = 60000 / bpm; // ms per beat
 
   if (isNaN(bpm) || bpm <= 0) return alert("Enter a valid BPM");
