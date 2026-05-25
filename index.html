@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Make music with only one tap" />
+
     <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
+
     <link rel="icon" type="image/png" href="download.png" />
+
     <title>Tap Music</title>
   </head>
+
   <body>
     <div class="app">
       <header>
         <h1>Tap Music</h1>
+
         <p>Make music with only one tap</p>
+
         <div
           class="badge-base LI-profile-badge"
           data-locale="en_US"
@@ -27,44 +35,51 @@
           data-vanity="asher-thomas-abraham-0b4a82206"
           data-version="v1"
         >
-          <!-- <a
-        class="badge-base__link LI-simple-link"
-        href="https://in.linkedin.com/in/asher-thomas-abraham-0b4a82206?trk=profile-badge"
-        ></a> -->
+          <!-- LinkedIn badge -->
         </div>
-        <button id="startMetronome">Start Metronome</button>
-        <button id="stopMetronome" disabled>Stop Metronome</button>
-        <input
-          type="number"
-          id="bpmInput"
-          value="120"
-          min="30"
-          max="300"
-        /><label>BPM</label>
+
+        <div class="controls">
+          <button id="startMetronome">Start Metronome</button>
+
+          <button id="stopMetronome" disabled>Stop Metronome</button>
+
+          <div class="bpm-control">
+            <input type="number" id="bpmInput" value="120" min="30" max="300" />
+
+            <label for="bpmInput">BPM</label>
+          </div>
+        </div>
+
         <audio
           src="sounds/metronome-sound.mp3"
           id="metronomeBeat"
           preload="auto"
-        />
+        ></audio>
       </header>
 
       <div class="visual"></div>
+
       <div class="pads">
         <div class="pad1" title="Plays bubbles sound">
           <audio class="sound" src="./sounds/bubbles.mp3"></audio>
         </div>
+
         <div class="pad2" title="Plays clay sound">
           <audio class="sound" src="./sounds/clay.mp3"></audio>
         </div>
+
         <div class="pad3" title="Plays confetti sound">
           <audio class="sound" src="./sounds/confetti.mp3"></audio>
         </div>
+
         <div class="pad4" title="Plays glimmer sound">
           <audio class="sound" src="./sounds/glimmer.mp3"></audio>
         </div>
+
         <div class="pad5" title="Plays moon sound">
           <audio class="sound" src="./sounds/moon.mp3"></audio>
         </div>
+
         <div class="pad6" title="Plays ufo sound">
           <audio class="sound" src="./sounds/ufo.mp3"></audio>
         </div>
@@ -77,6 +92,7 @@
       defer
       type="text/javascript"
     ></script>
+
     <script src="index.js"></script>
   </body>
 </html>
